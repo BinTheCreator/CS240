@@ -1,0 +1,2 @@
+
+        int space = line - i;
