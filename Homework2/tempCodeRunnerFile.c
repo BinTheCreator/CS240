@@ -1,2 +1,2 @@
 
-        int space = line - i;
+        printf("\n");
