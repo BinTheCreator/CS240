@@ -5,14 +5,14 @@ int main(void)
     int row, starsCount; 
     printf("Enter the number of rows: ");
     scanf("%d", &row);
-    starsCount = 1; // set numeber of star intially at 1
+    starsCount = 1; // set number of star intially at 1
 
     
-    for (int i = 0; i <= row; i++) {
+    for (int i = 0; i < row; i++) {
         // Print spaces for everyline of i
         for (int j = row; j > i; j--) {
             printf(" ");
-            //for everyspace that is the last element of the line print "*"
+            //for prints the number of "*" corresponsd to the number of line start from the last element
             for (int k = 0; k < starsCount; k++) {
                 if (j == i + 1)
                 {
@@ -23,7 +23,7 @@ int main(void)
         starsCount++; // keep count of the stars
         printf("\n");
     }
-    
+    return 0;
 }
 
 
