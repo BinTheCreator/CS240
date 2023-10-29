@@ -17,7 +17,7 @@ int main(void)
     printf("Enter the grade of the sixth homework\n");
     scanf("%d", &grade[5]);
     for (int i = 0; i < 6; i++) {
-       avarage = avarage + ((grade[i])/6.0);
+       avarage += ((grade[i])/6.0);
     }
     printf("Average grade of your homework is: %.2f\n", avarage);
     return 0;
