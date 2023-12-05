@@ -2,20 +2,28 @@
 
 int main(void)
 {
-    int row;
+    int row, starsCount; 
     printf("Enter the number of rows: ");
     scanf("%d", &row);
+    starsCount = 1; // set number of star intially at 1
 
-    for (int i = row; i >=1; i--){
-        int space = row - i;
-        printf("%*s", space, " ");
-        printf("%*s\n", i-1, "*");
-        printf("%0*i", 20, 0);
-        
-        
-        
-    }
     
+    for (int i = 0; i < row; i++) {
+        // Print spaces for everyline of i
+        for (int j = row; j > i; j--) {
+            printf(" ");
+            //for prints the number of "*" corresponsd to the number of line start from the last element
+            for (int k = 0; k < starsCount; k++) {
+                if (j == i + 1)
+                {
+                    printf("*");
+                }
+            }
+        }
+        starsCount++; // keep count of the stars
+        printf("\n");
+    }
+    return 0;
 }
 
 
