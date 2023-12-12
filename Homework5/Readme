@@ -1,0 +1,13 @@
+Name: Nhan Do
+Date: 12/11/2023
+Project: Homework5 & Extra_credit 
+
+There are 3 main file which are wordCount.c, merge.c, and heapSort.c
+
+---Descriptions---- 
+
+wordCount.c: The program taking a textfile as an input and print out the content of the file, as well as the number of characters(excluding white spaces) and the number of words within the textfile.
+
+merge.c: The program taking two textfiles and a new textfile name as inputs, and print out a successful merge message. It is ok if you did not create a new textfile before running the program. To check the content of the new textfile, run command: cat 'new_textfile_name'
+
+heapSort.c: The program taking an integer as an input for the size of a dynamic array, then allow the user to input elements to the array according to the size input. The program will print out an ascending sorted array using heap sort algorithm.
